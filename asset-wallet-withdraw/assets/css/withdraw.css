@@ -1,0 +1,170 @@
+.aww-box{direction:rtl;color:#fff;padding:16px;width: 50%;margin-right: auto; margin-left: auto;}
+.aww-title{margin:0 0 16px;font-size:1.2rem;font-weight: 700;color: #f8c15b;}
+.aww-type-group{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.aww-type-card{display:flex;align-items:center;justify-content:center;min-height:64px;padding:12px;border:1px solid rgba(255,255,255,.14);border-radius:14px;cursor:pointer;text-align:center;font-weight:600;background:rgba(255,255,255,.05)}
+.aww-type-card input{position:absolute;opacity:0;width:0;height:0}
+.aww-type-card:has(input:checked){border-color:#F8C15B;color:#F8C15B;background:rgba(248,193,91,.12)}
+.aww-field{margin-bottom:14px}
+.aww-field label{display:block;margin-bottom:6px;color:rgba(255,255,255,.75)}
+.aww-input{width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#fff;box-sizing:border-box}
+.aww-btn{display:inline-block;padding:12px 18px !important;border-radius:12px !important;border:none;cursor:pointer !important;font-weight:600;text-decoration:none}
+.aww-btn-primary{    background-color: #ffffff05 !important;color:#FFFFFF;width:100%}
+.aww-info{margin-bottom:12px;color:rgba(255,255,255,.8)}
+.aww-cards,.aww-assets{display:flex;flex-direction:column;gap:8px}
+.aww-card-item,.aww-asset-item{padding:12px;border:1px solid rgba(255,255,255,.12);border-radius:12px;cursor:pointer;background:rgba(255,255,255,.04)}
+.aww-card-item:has(input:checked),.aww-asset-item:has(input:checked){border-color:#F8C15B;color:#F8C15B}
+.aww-card-item input,.aww-asset-item input{margin-left:8px}
+.aww-ship-box{padding:12px;border-radius:12px;background:rgba(255,255,255,.05);margin-bottom:12px;line-height:1.7}
+.aww-empty-action{text-align:center;padding:20px}
+.aww-msg{margin-top:12px}
+.aww-alert{padding:12px;border-radius:10px}
+.aww-alert-success{background:rgba(26,122,58,.2);color:#6fcf97}
+.aww-alert-error{background:rgba(197,34,31,.15);color:#f5a8a6}
+.aww-list{list-style:none;margin:0;padding:0}
+.aww-list-item{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;gap:12px}
+.aww-status{font-size:.8rem;margin-right:8px;padding:2px 8px;border-radius:8px}
+.aww-st-pending{background:rgba(248,193,91,.15);color:#F8C15B}
+.aww-st-approved{background:rgba(26,122,58,.2);color:#6fcf97}
+.aww-st-rejected{background:rgba(197,34,31,.15);color:#f5a8a6}
+.aww-reject{margin-top:6px;color:#f5a8a6;font-size:.85rem}
+.aww-li-meta{font-size:.85rem;color:rgba(255,255,255,.55);margin-top:4px}
+.aww-li-date{font-size:.8rem;color:rgba(255,255,255,.4);white-space:nowrap}
+.aww-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    padding-bottom: 14px;
+}
+.aww-subtitle {
+    margin: 6px 0 0;
+    font-size: .85rem;
+        color: rgba(255, 255, 255, .55);
+}
+/* کارت بانکی — مثل باکس‌های قبلی */
+.aww-cards {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.aww-cards input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	pointer-events: none;
+}
+
+.aww-card-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	min-height: 64px;
+	padding: 14px 16px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 14px;
+	cursor: pointer;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.85);
+	transition: all 0.2s ease;
+	user-select: none;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+}
+
+.aww-card-item span {
+	display: block;
+	line-height: 1.5;
+}
+
+.aww-card-item small {
+	display: block;
+	margin-top: 4px;
+	font-weight: 500;
+	font-size: 0.85rem;
+	color: rgba(255, 255, 255, 0.5);
+	direction: ltr;
+	
+}
+
+.aww-card-item:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: rgba(248, 193, 91, 0.35);
+}
+
+.aww-card-item:has(input:checked) {
+	background: rgba(248, 193, 91, 0.12);
+	border-color: #F8C15B;
+	color: #F8C15B;
+	box-shadow: inset 0 0 0 1px rgba(248, 193, 91, 0.25);
+}
+
+.aww-card-item:has(input:checked) small {
+	color: rgba(248, 193, 91, 0.75);
+}
+
+.aww-assets {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.aww-assets input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	pointer-events: none;
+}
+
+.aww-asset-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	min-height: 64px;
+	padding: 14px 16px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 14px;
+	cursor: pointer;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.85);
+	transition: all 0.2s ease;
+	user-select: none;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.aww-asset-item span {
+	color: rgba(255, 255, 255, 0.55);
+	font-weight: 500;
+	font-size: 0.9rem;
+	white-space: nowrap;
+}
+
+.aww-asset-item:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: rgba(248, 193, 91, 0.35);
+}
+
+.aww-asset-item:has(input:checked) {
+	background: rgba(248, 193, 91, 0.12);
+	border-color: #F8C15B;
+	color: #F8C15B;
+	box-shadow: inset 0 0 0 1px rgba(248, 193, 91, 0.25);
+}
+
+.aww-asset-item:has(input:checked) span {
+	color: rgba(248, 193, 91, 0.8);
+}

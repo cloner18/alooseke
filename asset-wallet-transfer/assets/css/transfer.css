@@ -1,0 +1,143 @@
+.awt-transfer { direction: rtl; color: #fff; padding: 20px;    width: 50%;    margin-right: auto;    margin-left: auto; }
+.awt-header { margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,.08); padding-bottom: 14px; }
+.awt-title { margin: 0; font-size: 1.25rem; color: #f8c15b;margin-bottom: 8px;    font-weight: 700;}
+.awt-subtitle { margin: 6px 0 0; font-size: .85rem; color: rgba(255,255,255,.55); }
+.awt-form-group { margin-bottom: 16px; }
+.awt-form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: rgba(255,255,255,.75); }
+.awt-input { width: 100%; padding: 12px 14px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.14); border-radius: 12px; color: #fff; box-sizing: border-box; }
+.awt-radio-group { display: flex; flex-direction: column; gap: 10px; }
+.awt-radio { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.awt-btn { display: block; width: 100%; padding: 14px; border: none; border-radius: 14px; font-weight: 600; cursor: pointer; margin-top: 8px; }
+.awt-btn-primary { background-color: #ffffff05!important; color: white;border: 1px solid rgba(255, 255, 255, 0.14); }
+.awt-btn-primary:disabled { opacity: .4; cursor: not-allowed; }
+.awt-btn-ghost { background: transparent !important; color: rgba(255,255,255,.7); }
+.awt-receiver-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 16px; margin-bottom: 14px;text-align: center; }
+.awt-receiver-name { font-size: 14px; font-weight: 700; margin: 4px 0; }
+.awt-assets-list { display: flex; flex-direction: column; gap: 8px; }
+.awt-asset-item { padding: 10px 12px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); border-radius: 10px; cursor: pointer; }
+.awt-balance-box { display: flex; justify-content: space-between; padding: 14px; background: rgba(248,193,91,.08); border-radius: 12px; margin-bottom: 14px; }
+.awt-summary { background: rgba(255,255,255,.04); border-radius: 12px; padding: 16px; margin-bottom: 14px; line-height: 1.8; }
+.awt-otp-input { text-align: center; letter-spacing: 8px; font-size: 1.4rem; font-weight: 700; }
+.awt-success { text-align: center; padding: 20px; }
+.awt-success-title { color: #6fcf97; font-size: 1.15rem; font-weight: 700; }
+.awt-trx { margin-top: 12px; color: rgba(255,255,255,.7); }
+.awt-messages { margin-top: 14px; }
+.awt-msg { padding: 12px; border-radius: 10px; font-size: .9rem; }
+.awt-msg-success { background: rgba(26,122,58,.2); color: #6fcf97; border: 1px solid rgba(26,122,58,.35); }
+.awt-msg-error { background: rgba(197,34,31,.15); color: #f5a8a6; border: 1px solid rgba(197,34,31,.3); }
+.awt-msg-info { background: rgba(80,130,255,.12); color: #a8c5ff; }
+.awt-hint { font-size: .85rem; color: rgba(255,255,255,.5); margin-top: 6px; }
+.awt-radio-group {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.awt-radio-group input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	pointer-events: none;
+}
+
+.awt-radio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 72px;
+	padding: 12px 10px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 14px;
+	cursor: pointer;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.8);
+	transition: all 0.2s ease;
+	user-select: none;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	word-wrap: break-word;
+	line-height: 1.4;
+}
+
+.awt-radio:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: rgba(248, 193, 91, 0.35);
+}
+
+.awt-radio:has(input:checked) {
+	background: rgba(248, 193, 91, 0.12);
+	border-color: #F8C15B;
+	color: #F8C15B;
+	box-shadow: inset 0 0 0 1px rgba(248, 193, 91, 0.25);
+}
+
+/* لیست دارایی‌ها مثل باکس‌های نوع انتقال */
+.awt-assets-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.awt-assets-list input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	pointer-events: none;
+}
+
+.awt-asset-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	min-height: 64px;
+	padding: 14px 16px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 14px;
+	cursor: pointer;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.85);
+	transition: all 0.2s ease;
+	user-select: none;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+}
+
+.awt-asset-item span {
+	color: rgba(255, 255, 255, 0.55);
+	font-weight: 500;
+	font-size: 0.9rem;
+	white-space: nowrap;
+}
+
+.awt-asset-item:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: rgba(248, 193, 91, 0.35);
+}
+
+.awt-asset-item:has(input:checked) {
+	background: rgba(248, 193, 91, 0.12);
+	border-color: #F8C15B;
+	color: #F8C15B;
+	box-shadow: inset 0 0 0 1px rgba(248, 193, 91, 0.25);
+}
+
+.awt-asset-item:has(input:checked) span {
+	color: rgba(248, 193, 91, 0.8);
+}

@@ -1,0 +1,10 @@
+/* Asset Wallet Admin */
+.asset-wallet-stats .stat-box h3 {
+	margin: 0 0 5px;
+	font-size: 1.8em;
+	color: #c9a227;
+}
+.wrap table.wp-list-table td,
+.wrap table.wp-list-table th {
+	text-align: right;
+}

@@ -1,0 +1,298 @@
+/* Asset Wallet Frontend - RTL */
+.asset-wallet-container,
+.asset-wallet-sell-container {
+	direction: rtl;
+	text-align: right;
+	font-family: inherit;
+	max-width: 800px;
+	margin: 0 auto 2rem;
+	padding: 1rem;
+}
+
+.asset-wallet-title {
+	font-size: 1.5rem;
+	margin-bottom: 1.25rem;
+	border-bottom: 2px solid #c9a227;
+	padding-bottom: 0.5rem;
+}
+
+.asset-wallet-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.asset-wallet-table th,
+.asset-wallet-table td {
+	padding: 12px 14px;
+	border-bottom: 1px solid #eee;
+	text-align: right;
+}
+
+.asset-wallet-table th {
+	background: #f8f5ee;
+	font-weight: 600;
+	color: #333;
+}
+
+.asset-wallet-table tr:last-child td {
+	border-bottom: none;
+}
+
+.asset-wallet-empty {
+	padding: 2rem;
+	text-align: center;
+	background: #f9f9f9;
+	border-radius: 8px;
+	color: #666;
+}
+
+/* Sell form */
+.asset-wallet-sell-form .form-row {
+	margin-bottom: 1.1rem;
+}
+
+.asset-wallet-sell-form label {
+	display: block;
+	margin-bottom: 0.4rem;
+	font-weight: 600;
+}
+
+.aw-input {
+
+}
+
+/* =========================
+   Asset Wallet Quantity
+========================= */
+
+.aw-qty-control {
+    display: flex;
+    align-items: center;
+    width: 132px;
+    height: 44px;
+
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.aw-quantity{
+	text-align: center;
+}
+
+/* =========================
+   دکمه‌های + و -
+========================= */
+
+.aw-qty-control .aw-qty-btn {
+    width: 40px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    border: 0;
+    background: transparent;
+
+    color: #AFC2E8;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.aw-qty-control .aw-qty-btn:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   Input
+========================= */
+
+.aw-qty-control #aw-quantity {
+    width: 52px;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    border: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.07);
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 0;
+    background: transparent;
+
+    color: #FFFFFF;
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    outline: none;
+    box-shadow: none;
+
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+
+/* =========================
+   حذف فلش input number
+========================= */
+
+.aw-qty-control #aw-quantity::-webkit-inner-spin-button,
+.aw-qty-control #aw-quantity::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.aw-price-box {
+	background: #a61e2d69;
+	padding: 14px 16px;
+	border-radius: 10px;
+	    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+	margin-bottom: 38px;
+
+}
+
+.aw-price-line {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.aw-total {
+	color: #1a7a3a;
+	font-size: 1.15rem;
+}
+
+.aw-price-updated {
+	color: #ffffff;
+	font-size: 0.85rem;
+	    text-align: center;
+}
+
+.aw-btn {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 12px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.aw-btn-primary {
+background: #a61e2d !important;
+}
+
+.aw-btn-primary:hover:not(:disabled) {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.aw-btn-primary:disabled {
+	opacity: 0.55;
+	cursor: not-allowed;
+}
+
+.aw-btn-secondary {
+	background: #e0e0e0;
+	color: #333;
+	margin-right: 8px;
+}
+
+.aw-otp-section {
+	margin-top: 1.5rem;
+	padding: 1.2rem;
+
+}
+
+.aw-messages {
+	margin-top: 1rem;
+}
+
+.aw-messages .aw-msg {
+	padding: 10px 14px;
+	border-radius: 6px;
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+.aw-msg-success {
+
+	color: #1a7a3a;
+
+}
+
+.aw-msg-error {
+
+	color: #c5221f;
+
+}
+
+.aw-msg-info {
+
+	color: #1a73e8;
+
+}
+
+.aw-price-confirm {
+	margin-top: 1rem;
+	padding: 1rem;
+	background: #fff8e1;
+	border: 1px solid #ffe082;
+	border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+	.asset-wallet-table thead {
+		display: none;
+	}
+	.asset-wallet-table tr {
+		display: block;
+		margin-bottom: 1rem;
+		border: 1px solid #eee;
+		border-radius: 8px;
+		padding: 8px;
+	}
+	.asset-wallet-table td {
+		display: flex;
+		justify-content: space-between;
+		border: none;
+		padding: 6px 8px;
+	}
+	.asset-wallet-table td::before {
+		content: attr(data-label);
+		font-weight: 600;
+		margin-left: 10px;
+	}
+}
